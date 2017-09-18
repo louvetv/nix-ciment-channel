@@ -32,7 +32,10 @@ let
     petsc = petscComplex;
 
     # Arpack-ng
-    arpackNG = callPackage ./ciment/arpack-ng { };  
+    arpackNG = callPackage ./ciment/arpack-ng { };
+
+    # Scalapack
+    scalapack = callPackage ./ciment/scalapack { };
 
 };
 in pkgs // self
